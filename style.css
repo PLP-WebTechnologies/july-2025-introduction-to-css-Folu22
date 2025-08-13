@@ -1,0 +1,122 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header styling */
+header {
+    background-color: #d35400; /* orange color */
+    color: white;
+    display: flex; /* Side-by-side layout for all items */
+    align-items: center; /* Vertical center */
+    justify-content: center; /* Center everything horizontally */
+    padding: 1.5rem;
+    gap: 1rem; /* Space between elements */
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+    text-align: center; /* Helps for small screen wrapping */
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+/* Image styling */
+header img {
+    width: 120px; /* Adjust size */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Make text and image stay in one line on large screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack on small screens */
+    }
+}
+
+
+/* Menu section */
+#menu {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+#menu h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #d35400;
+}
+
+/* Categories */
+.menu-category {
+    margin-bottom: 2rem;
+}
+.menu-category h3 {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #d35400;
+    display: inline-block;
+    padding-bottom: 0.3rem;
+}
+
+/* Menu items grid */
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* Individual menu item */
+.menu-item {
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 1rem;
+}
+.menu-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 0.8rem;
+}
+.menu-item h4 {
+    margin-bottom: 0.5rem;
+    color: #d35400;
+}
+.menu-item p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+}
+.menu-item .price {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+/* Footer */
+footer {
+    background-color: #d35400;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
